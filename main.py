@@ -4,6 +4,18 @@ from search import Problem
 
 
 class myProblem(Problem):
+    def __init__(self, initial, goal=None):
+        # constructor
+        self.initial = initial
+        self.goal = goal
+
+    def actions(self, state):
+        pass
+
+    def result(self, state, action):
+        pass
+
+    def goal_test(self, state):
 
 
 if __name__ == '__main__':
