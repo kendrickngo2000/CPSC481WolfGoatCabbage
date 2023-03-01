@@ -23,7 +23,7 @@ class WolfGoatCabbage(Problem):
             frozenset(['G', 'F']): [{'G', 'F'}]
         }
         return actions_dict.get(frozenset(state), [])
-
+    
     def result(self, state, actions):
         new_state = set(state)
         new_state.update(set(actions - state))
