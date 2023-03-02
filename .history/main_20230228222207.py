@@ -8,8 +8,7 @@ class WolfGoatCabbage(Problem):
         return state == self.goal
 
     def result(self, state, action):
-        next_state = sorted(state + action)
-        return frozenset(next_state)
+        pass
 
     def actions(self, state):
         actions_dict = {
